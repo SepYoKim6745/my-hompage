@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">MyPortfolio</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#essays">Essays</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#play">Play</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home" class="hero fade-in">
+            <h1>기록하고,<br>만들어가는 과정.</h1>
+            <p>저의 생각과 작업물을 소개합니다.</p>
+            <div class="scroll-down">↓</div>
+        </section>
+
+        <section id="about" class="fade-in">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>저는 글을 쓰고, 무언가를 만들어가는 과정을 즐깁니다.<br>
+                일상의 작은 영감들을 글로 남기고, 손으로 직접 형태를 만들어내는 작업에 매력을 느낍니다.<br>
+                이 공간은 저의 그런 흔적들을 모아둔 곳입니다.</p>
+            </div>
+        </section>
+
+        <section id="essays" class="fade-in">
+            <h2>Essays</h2>
+            <div class="essay-list">
+                <article class="essay-card">
+                    <h3>시작하는 글</h3>
+                    <p>처음 글을 쓰기 시작했을 때의 마음가짐...</p>
+                </article>
+                <article class="essay-card">
+                    <h3>영감을 찾는 방법</h3>
+                    <p>일상에서 마주치는 작은 것들로부터...</p>
+                </article>
+                <article class="essay-card">
+                    <h3>만드는 기쁨</h3>
+                    <p>손끝에서 무언가가 완성되어 가는 짜릿함...</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="process" class="fade-in">
+            <h2>Making Process</h2>
+            <div class="process-grid">
+                <div class="process-item">
+                    <div class="image-placeholder">Step 1</div>
+                    <p>아이디어 스케치</p>
+                </div>
+                <div class="process-item">
+                    <div class="image-placeholder">Step 2</div>
+                    <p>재료 준비</p>
+                </div>
+                <div class="process-item">
+                    <div class="image-placeholder">Step 3</div>
+                    <p>제작 과정</p>
+                </div>
+                <div class="process-item">
+                    <div class="image-placeholder">Step 4</div>
+                    <p>완성</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="play" class="fade-in">
+            <h2>Play</h2>
+            <div class="game-container">
+                <iframe src="tetris/index.html" title="Tetris Game"></iframe>
+            </div>
+            <p class="game-desc">제가 직접 구현한 테트리스 게임을 즐겨보세요!</p>
+        </section>
+
+        <section id="contact" class="fade-in">
+            <h2>Contact</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="이름" required>
+                <input type="email" placeholder="이메일" required>
+                <textarea placeholder="메시지를 남겨주세요" rows="4" required></textarea>
+                <button type="submit">보내기</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
